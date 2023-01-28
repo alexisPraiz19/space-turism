@@ -1,0 +1,242 @@
+/* desktop 1440px - styles */
+.destination {
+  background-image: url("../../public/assets/destination/background-destination-desktop.jpg");
+}
+
+.destination .destination-content {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.destination-content .planet-img_slider {
+  width: 430px;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.planet-img_slider .planet-img_slide {
+  width: 400%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.planet-img_slide .planet-img_figure {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+}
+
+.planet-img_figure .planet-img {
+  width: 100%;
+}
+
+.destination-content .planet-description {
+  max-width: 455px;
+}
+
+.planet-description .planets-links {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.planets-links li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #9e98d1;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+}
+
+.planets-links li:hover {
+  background-color: #eee1;
+  color: #fff;
+}
+
+.planets-links .bar-slide_planets {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+  -webkit-transition: transform 0.1s ease;
+  -moz-transition: transform 0.1s ease;
+  -ms-transition: transform 0.1s ease;
+  -o-transition: transform 0.1s ease;
+}
+
+.planet-description .planet-name {
+  padding-top: 10px;
+  font-size: 100px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+.planet-description .planet-description_text {
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+.planet-description .travel-details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #aaa7;
+  text-transform: uppercase;
+}
+
+.travel-details .travel-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  letter-spacing: 1px;
+}
+
+.travel-details .travel-detail span:first-child {
+  font-size: 14px;
+}
+
+.travel-details .travel-detail span:last-child {
+  font-size: 22px;
+}
+
+/* desktop 1100px - styles */
+@media screen and (max-width: 1100px) {
+  .destination-content .planet-img_slider {
+    max-width: 350px;
+  }
+
+  .destination-content .planet-description {
+    max-width: 350px;
+  }
+
+  .planet-description .planet-name {
+    font-size: 80px;
+  }
+
+  .destination .destination-title {
+    left: 5%;
+  }
+}
+
+/* tablets 830px - styles */
+@media screen and (max-width: 830px) {
+  .destination {
+    background-image: url("../../public/assets/destination/background-destination-tablet.jpg");
+  }
+
+  .destination .destination-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding-bottom: 50px;
+    gap: 60px;
+  }
+
+  .destination-content .planet-img_slider {
+    max-width: 310px;
+  }
+
+  .planet-description .planet-name,
+  .planet-description .planet-description_text {
+    text-align: center;
+  }
+
+  .planet-description .travel-details {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .destination {
+    background-image: url("../../public/assets/destination/background-destination-desktop.jpg");
+  }
+}
+
+/* mobile 380px - styles */
+@media screen and (max-width: 380px) {
+  .destination-content .planet-img_slider {
+    max-width: 250px;
+  }
+
+  .planet-description .planet-name {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .destination .destination-title {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .planet-description .planet-name {
+    font-size: 55px;
+  }
+
+  .planet-description .planet-description_text {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

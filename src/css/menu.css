@@ -1,0 +1,191 @@
+/* desktop 1140px - styles */
+.header {
+    width: 100%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header .logo {
+    position: relative;
+    left: 40px;
+}
+
+.header .icon-hamburger,
+.menu-ul .icon-close {
+    display: none;
+}
+
+.header .menu {
+    width: 57%;
+    height: 100%;
+    background-color: #fff1;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    z-index: 100;
+}
+
+.menu .menu-ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+.menu-ul li {
+    height: 100%;
+}
+
+.menu-ul li .ancla {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-ul li .ancla .nav-index {
+    font-weight: 600;
+}
+
+.menu-ul li .ancla::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #eee;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+    -moz-transition: width .2s ease;
+    -ms-transition: width .2s ease;
+    -o-transition: width .2s ease;
+}
+
+.menu-ul li .ancla:hover::before {
+    width: 100%;
+}
+
+/* tablets 830px - styles */
+@media screen and (max-width: 830px) {
+    .header .menu {
+        width: auto;
+        padding: 0 30px;
+    }
+
+    .menu .menu-ul {
+        gap: 20px;
+    }
+}
+
+/* mobile 450px - styles */
+
+@media screen and (max-width: 450px) {
+    .header .logo {
+        left: 25px;
+        transform: scale(.9);
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+    }
+
+    .header .icon-hamburger {
+        position: relative;
+        right: 25px;
+        display: block;
+        width: 24px;
+        height: 21px;
+        cursor: pointer;
+        background-image: url('../assets/shared/icon-hamburger.svg');
+    }
+
+    .menu-ul .icon--close {
+        display: block;
+        width: 20px;
+        height: 21px;
+        background-image: url('../assets/shared/icon-close.svg');
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        -webkit-transition: -webkit-clip-path .1s ease;
+        transition: -webkit-clip-path .1s ease;
+        transition: clip-path .1s ease;
+        transition: clip-path .1s ease, -webkit-clip-path .1s ease;
+        -webkit-transition: clip-path .1s ease;
+        -moz-transition: clip-path .1s ease;
+        -ms-transition: clip-path .1s ease;
+        -o-transition: clip-path .1s ease;
+    }
+
+    .menu-ul .icon-close {
+        position: absolute;
+        top: 20px;
+        right: -10px;
+        display: block;
+        height: 0;
+        transform: scale(.8);
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -ms-transform: scale(.8);
+        -o-transform: scale(.8);
+    }
+
+    .menu .menu-ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+        gap: 0;
+        padding-top: 35px;
+    }
+
+    .menu-ul li {
+        height: 80px;
+    }
+
+    .menu-ul li .ancla::before {
+        display: none;
+    }
+}

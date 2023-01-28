@@ -1,0 +1,224 @@
+/* desktop 1440px - styles */
+.technology {
+    background-image: url('../../public/assets/technology/background-technology-desktop.jpg');
+}
+
+.technology .technology-content {
+    width: 90%;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.technology-content .technology-texts {
+    height: 255px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 60px;
+}
+
+.technology-texts .technology-links {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.technology-links li {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #aaa;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.technology-links li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.technology-texts .technology-text {
+    max-width: 480px;
+}
+
+.technology-text span {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.technology-text .vehicle-name {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #ccc;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.technology-img_figure {
+    width: 495px;
+    height: auto;
+}
+
+.technology-img_figure .img-technology {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+/* desktop 1300px - styles */
+@media screen and (max-width: 1300px) {
+    .technology-img_figure {
+        width: 460px;
+    }
+}
+
+/* desktop 1100px - styles */
+@media screen and (max-width: 1100px) {
+    .technology .technology-content {
+        width: 95%;
+    }
+
+    .technology-links li {
+        width: 50px;
+        height: 50px;
+    }
+
+    .technology-content .technology-texts {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        gap: 35px;
+    }
+
+    .technology-text span {
+        font-size: 14px;
+    }
+
+    .technology-text .vehicle-name {
+        font-size: 35px;
+    }
+
+    .technology-img_figure {
+        width: 440px;
+    }
+}
+
+/* tablets 830px - styles */
+@media screen and (max-width: 830px) {
+    .technology {
+        background-image: url('../../public/assets/technology/background-technology-tablet.jpg');
+    }
+
+    .technology .technology-content {
+        width: 100%;
+        margin: 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .technology-texts .technology-links {
+        width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    .technology-content .technology-texts {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .technology-img_figure {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .technology-img_figure .img-technology{
+        width: max-content;
+    }
+}
+
+/* mobile 450px - styles */
+@media screen and (max-width: 450px) {
+    .technology {
+        background-image: url('../../public/assets/technology/background-technology-mobile.jpg');
+    }
+
+    .technology .technology-content{
+        padding-bottom: 50px;
+    }
+    
+    .technology-content .technology-texts {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .technology-img_figure .img-technology{
+        width: 100%;
+    }
+}
+
+/* mobile 350px - styles */
+@media screen and (max-width: 350px) {
+    .technology-text span {
+        font-size: 13px;
+    }
+
+    .technology-text .vehicle-name {
+        font-size: 28px;
+    }
+
+    .technology-links li {
+        width: 45px;
+        height: 45px;
+    }
+}
